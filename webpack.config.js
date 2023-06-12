@@ -5,13 +5,15 @@ module.exports = {
     filename:'myBundle.js',
     path: path.resolve(__dirname,'dist')
   },
+  mode:none,
   devServer: {
     port: 8080,
     static: {
       directory: path.resolve(__dirname, 'dist'),
       
     },
-    hot:true
+
+    hot:true,
   }
- 
+  
 }
